@@ -1,0 +1,133 @@
+/* Style global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+/* Vidéo en arrière-plan */
+.background-video {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre parfaitement */
+    width: 80%; /* La vidéo occupe 80% de la largeur */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    z-index: -1; /* Place la vidéo derrière le contenu */
+    background-color: rgba(0, 0, 0, 0.003); /* Fond noir autour de la vidéo */
+}
+
+/* Animation pour la rotation */
+@keyframes rotate-video {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+/* Section principale */
+.splash {
+    position: relative;
+    background-color: rgb(0, 0, 0); /* Fond noir pour les contours */
+    overflow: hidden; /* Empêche le débordement de la vidéo */
+    height: 100vh; /* La section occupe toute la hauteur de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content-wrap {
+    text-align: center;
+}
+
+.page-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Disposition verticale des rubriques */
+#project-canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Style des rubriques */
+.js-project-module {
+    margin-bottom: 30px;
+}
+
+.button-container {
+    margin: 20px;
+}
+
+/* Style des boutons */
+.button-module {
+    display: inline-block;
+    background-color: transparent; /* Pas de fond */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 2rem; /* Taille du texte */
+    text-transform: uppercase; /* Texte en majuscules */
+    text-decoration: none; /* Pas de soulignement */
+    padding: 10px 20px; /* Espacement interne */
+    transition: color 0.3s; /* Transition pour l'effet au survol */
+}
+
+.button-module:hover {
+    color: #f0f0f0; /* Couleur au survol */
+}
+
+/* Positionnement des icônes des réseaux sociaux */
+.social-icons {
+    position: absolute;
+    bottom: 20px; /* Distance du bas */
+    right: 20px; /* Distance de la droite */
+    display: flex;
+    gap: 10px; /* Espacement entre les icônes */
+}
+
+.social-icons .icon {
+    width: 40px; /* Taille des icônes */
+    height: 40px;
+}
+
+/* Effet au survol des rubriques */
+.button-module:hover {
+    color: #f0f0f0; /* Change la couleur au survol */
+}
+
+/* Style des sections */
+.section-content {
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: #f0f0f0;
+}

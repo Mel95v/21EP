@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 - Un EP Alternatif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .social-icons .icon {
+            filter: invert(1); /* Inverse les couleurs pour rendre les icônes blanches */
+            width: 40px; /* Taille des icônes */
+            height: 40px;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 50%; /* Centre verticalement */
+            left: 50%; /* Centre horizontalement */
+            transform: translate(-50%, -50%); /* Centre parfaitement */
+            width: 80%; /* La vidéo occupe 80% de la largeur */
+            height: auto; /* Ajuste la hauteur automatiquement */
+            z-index: -1; /* Place la vidéo derrière le contenu */
+            background-color: rgba(91, 5, 5, 0.05); /* Fond noir autour de la vidéo */
+        }
+
+        .splash {
+            position: relative; /* Nécessaire pour que la vidéo soit positionnée par rapport à cette section */
+            background-color: rgba(75, 10, 10, 0.058); /* Fond noir pour les contours */
+            overflow: hidden; /* Empêche le débordement de la vidéo */
+            height: 100vh; /* La section occupe toute la hauteur de l'écran */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section principale avec les rubriques -->
+    <section class="splash centered">
+        <!-- Vidéo en arrière-plan -->
+        <video class="background-video" autoplay muted loop>
+            <source src="images/video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+
+        <div class="outer-wrap">
+            <div class="centered-content-wrap">
+                <div class="page-content">
+                    <div id="project-canvas">
+                        <!-- Rubriques avec les boutons -->
+                        <div class="button-container">
+                            <a href="ep.html" class="button-module">21, L'EP</a>
+                        </div>
+                        <div class="button-container">
+                            <a href="magazine.html" class="button-module">21, Le Magazine</a>
+                        </div>
+                        <div class="button-container">
+                            <a href="labo.html" class="button-module">21, Le Labo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icônes des réseaux sociaux -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/ivy_mel_/" target="_blank">
+            <img src="images/instagram-white.png" alt="Instagram" class="icon">
+        </a>
+        <a href="https://x.com/_Nameli" target="_blank">
+            <img src="images/twitter-white.png" alt="Twitter" class="icon">
+        </a>
+    </div>
+</body>
+</html>
+
